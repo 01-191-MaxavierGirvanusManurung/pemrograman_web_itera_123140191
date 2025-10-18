@@ -1,12 +1,12 @@
 # Aplikasi Manajemen Tugas Mahasiswa
 
-Aplikasi web sederhana untuk membantu mahasiswa mengelola tugas-tugas akademik mereka secara interaktif. Aplikasi ini menyimpan data secara lokal di browser pengguna, memastikan data tetap ada bahkan setelah menutup browser.
+Aplikasi web sederhana untuk membantu mahasiswa mengelola tugas-tugas akademik mereka secara interaktif.
 
 ---
 
 ## 🚀 Cara Menjalankan Aplikasi
 
-Untuk menjalankan aplikasi ini, Anda hanya perlu browser web modern (Chrome, Firefox, Edge, Safari, dll.).
+Untuk menjalankan aplikasi ini, Anda hanya perlu browser web modern (Chrome, Firefox, Edge, dll.).
 
 1.  **Simpan File:** Pastikan Anda memiliki ketiga file berikut di folder yang sama:
     *   `index.html`
@@ -44,10 +44,9 @@ Aplikasi ini dibangun menggunakan teknologi web standar (HTML, CSS, JavaScript) 
 
 ### 💾 Penggunaan `localStorage` untuk Penyimpanan Data
 
-*   **Apa itu `localStorage`?**
-    `localStorage` adalah API penyimpanan web yang memungkinkan aplikasi JavaScript menyimpan data secara persisten di dalam browser web. Data yang disimpan di `localStorage` tidak memiliki batas waktu kedaluwarsa dan akan tetap ada bahkan setelah browser ditutup dan dibuka kembali, atau komputer dimatikan. Data disimpan dalam bentuk pasangan `key-value` dan hanya mendukung penyimpanan string.
+*   **`localStorage`** adalah API penyimpanan web yang memungkinkan aplikasi JavaScript menyimpan data secara persisten di dalam browser web. Data yang disimpan di `localStorage` tidak memiliki batas waktu kedaluwarsa dan akan tetap ada bahkan setelah browser ditutup dan dibuka kembali, atau komputer dimatikan. Data disimpan dalam bentuk pasangan `key-value` dan hanya mendukung penyimpanan string.
 
-*   **Bagaimana Digunakan dalam Aplikasi Ini:**
+*   **Penggunaan dalam Aplikasi Ini:**
     1.  **Pengambilan Data:** Saat aplikasi pertama kali dimuat (`DOMContentLoaded`), aplikasi mencoba mengambil data tugas yang tersimpan menggunakan `localStorage.getItem('tasks')`. Jika ada, data (yang tersimpan sebagai string JSON) akan diuraikan kembali menjadi objek JavaScript (`JSON.parse()`) dan dimuat ke dalam array `tasks`.
     2.  **Penyimpanan Data:** Setiap kali ada perubahan pada array `tasks` (menambah, mengedit, menghapus, mengubah status), fungsi `saveTasks()` dipanggil. Fungsi ini:
         *   Mengubah array `tasks` menjadi string JSON menggunakan `JSON.stringify()`.
