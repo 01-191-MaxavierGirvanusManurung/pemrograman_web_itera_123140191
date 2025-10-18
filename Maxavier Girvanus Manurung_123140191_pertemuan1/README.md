@@ -3,7 +3,7 @@
 Aplikasi web sederhana untuk membantu mahasiswa mengelola tugas-tugas akademik mereka secara interaktif.
 
 ---
-##📷 Screenshot Aplikasi
+## 📷 Screenshot Aplikasi
 
 ![Tampilan input tugas](images/input.png "Tampilan Pengingputan Tugas")
 
