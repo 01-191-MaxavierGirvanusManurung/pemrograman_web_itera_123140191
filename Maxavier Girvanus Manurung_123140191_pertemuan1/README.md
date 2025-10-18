@@ -6,12 +6,15 @@ Aplikasi web sederhana untuk membantu mahasiswa mengelola tugas-tugas akademik m
 ## 📷 Screenshot Aplikasi
 
 ![Tampilan input tugas](images/input.png "Tampilan Pengingputan Tugas")
+
 Gambar di atas merupakan tampilan penginputan tugas
 
 ![Tampilan sudah ada tugas](images/sudah-ada-tugas.png "Tampilan sudah ada Tugas")
+
 Gambar di atas merupakan tampilan ketika sudah ada tugas yang terdaftar. Tugas tersebut terdata sebagai tugas yang belum selesai, sehingga informasi yang diberikan pada kolom 'Tugas Belum Selesai' adalah 1
 
 ![Tampilan edit tugas](images/edit.png "Tampilan Edit Tugas")
+
 Gambar di atas merupakan tampilan ketika user ingin mengedit tugas. Tugas tersebut terdata sebagai tugas yang sudah selesai, sehingga memiliki gaya visual yang berbeda (garis coret)
 
 ---
