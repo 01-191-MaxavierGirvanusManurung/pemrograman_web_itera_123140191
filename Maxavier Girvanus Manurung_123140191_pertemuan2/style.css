@@ -1,0 +1,94 @@
+/* Konfigurasi Variabel CSS */
+:root {
+    --primary: #4a90e2;
+    --bg: #f4f4f9;
+    --card-bg: #ffffff;
+    --text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+h1, h2 { margin-top: 0; }
+
+/* Header Info */
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time-display { font-size: 1.5rem; font-weight: bold; }
+.weather-display { font-style: italic; color: #666; }
+
+/* Todo Styles */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-add { background-color: var(--primary); color: white; }
+.btn-add:hover { background-color: #357abd; }
+
+ul { list-style: none; padding: 0; }
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child { border-bottom: none; }
+
+.actions button {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+}
+
+.btn-edit { background-color: #f1c40f; color: #fff; }
+.btn-delete { background-color: #e74c3c; color: #fff; }
+
+.loading { color: #888; font-size: 0.9rem; }

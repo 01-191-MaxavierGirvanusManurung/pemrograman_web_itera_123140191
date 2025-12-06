@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Menghubungkan file JS (defer agar dimuat setelah HTML selesai) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Widget Informasi (Waktu & Cuaca) -->
+        <div class="card header-info">
+            <div id="clock" class="time-display">00:00:00</div>
+            <div id="weather" class="weather-display">
+                <span class="loading">Memuat cuaca...</span>
+            </div>
+        </div>
+
+        <!-- Widget Daftar Tugas -->
+        <div class="card">
+            <h2>Daftar Tugas</h2>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Tambah tugas baru...">
+                <button id="addBtn" class="btn-add">Tambah</button>
+            </div>
+            <ul id="taskList">
+                <!-- List items akan dirender di sini via JS -->
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
