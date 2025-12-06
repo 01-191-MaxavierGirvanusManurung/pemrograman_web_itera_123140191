@@ -2,6 +2,11 @@
 
 Proyek ini adalah implementasi sederhana dari Sistem Manajemen Perpustakaan menggunakan bahasa pemrograman **Python**. Proyek ini dirancang untuk mendemonstrasikan pemahaman mendalam mengenai konsep Pemrograman Berorientasi Objek (OOP), termasuk **Class**, **Inheritance**, **Encapsulation**, **Polymorphism**, dan **Abstraction**.
 
+## 📷 Screenshot Hasil Running
+
+![Tampilan hasil running](images/hasil-running.png "Tampilan hasil running")
+
+
 ## 📋 Fitur Utama
 
 Program ini memiliki kemampuan untuk:
